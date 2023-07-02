@@ -41,9 +41,11 @@ public class CardRepository {
 
     /**
      * Validates:
-     * 1) Card Number using the Luhn Algorithm. {@see <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">wiki</a>}
-     * 2) Expiration Date checking that it is prior to the current month and year.
-     * 3) CVC checking that it is between 0 and 1000. {@see <a href="https://en.wikipedia.org/wiki/Card_security_code">wiki</a>}
+     * <ol>
+     * <li>Card Number using the Luhn Algorithm. <a href="https://en.wikipedia.org/wiki/Luhn_algorithm">wiki</a></li>
+     * <li>Expiration Date checking that it is prior to the current month and year.</li>
+     * <li>CVC checking that it is between 0 and 1000. See <a href="https://en.wikipedia.org/wiki/Card_security_code">wiki</a></li>
+     * </ol>
      *
      * @param card the card instance of {@link CardDetails}
      * @return {@code true} if the card is valid, or {@code false} otherwise.
